@@ -70,6 +70,17 @@ $("#add-food").on("click", function (event) {
   $("#food-input").val(" ");
 });
 
+$(".collapsible").on("click", function () {
+  var display = $(".favorite").attr("display")
+  if (display === "show") {
+    $(".favorite").hide();
+    $(".favorite").attr("display", "hide");
+  } else {
+    $(".favorite").show();
+    $(".favorite").attr("display", "show");
+  }
+})
+
 $(document).on("click", ".food", displayGifs);
 $(document).on("click", ".gif", animateGifs);
 renderButtons();

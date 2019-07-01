@@ -32,3 +32,12 @@ p{
     display: inline-block;
     padding: 10px;
 }
+
+.collapsible{
+    color:white;
+    
+}
+
+.favorite{
+    display:none;
+}
