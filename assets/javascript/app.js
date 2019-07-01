@@ -29,6 +29,7 @@ function displayGifs() {
         foodImage.attr("data-animate", results[i].images.fixed_height.url);
         foodImage.addClass("gif")
         gifDiv.prepend(foodImage);
+        gifDiv.addClass("column")
         $("#gifs-go-here").prepend(gifDiv);
       }
     });
