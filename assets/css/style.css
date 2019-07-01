@@ -1,0 +1,29 @@
+#poweredbygiphy{
+    float:right;
+}
+
+body{
+    background-color: black;
+}
+
+#textcolor{
+    color: #FF6666
+}
+
+.display-1{
+    color: #FFF35C
+}
+
+.btn{
+    background-color: #00CCFF;
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: #3191FF;
+}
+
+p{
+    color: white;
+}

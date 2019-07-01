@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
     <title>Food Cravings</title>
 </head>
 <body>
 <div class="container border border-info p-4 m-5">
+  <img src="assets/images/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif" id="poweredbygiphy">
     <h1 class="display-1">Food cravings.</h1>
     <blockquote class="blockquote">
-      <p class="mb-0">"People who love to eat are always the best people."</p>
-      <footer class="blockquote-footer">Julia Child
+      <p class="mb-0" id="textcolor" >"People who love to eat are always the best people."</p>
+      <footer class="blockquote-footer" id="textcolor">Julia Child
       </footer>
+
+      
+
     </blockquote>
     
     <hr>
     <div class="input-group">
         <input type="text" id="food-input"class="form-control" placeholder="Enter a food here..." aria-label="" aria-describedby="basic-addon1">
         <div class="input-group-append">
-          <button class="btn btn-dark" type="button" id="add-food">Crave it</button>
+          <button class="btn" type="button" id="add-food">Crave it</button>
           
         </div>
       </div>
@@ -30,16 +35,9 @@
     <div id="buttons-view"></div>  
     
     <hr>
-    <h2>All the Gifs go down here</h2>
     <div id="gifs-go-here"></div>
 </div>
 
     <script src="assets/javascript/app.js"></script>
-
-
-
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   -->
 </body>
 </html>
