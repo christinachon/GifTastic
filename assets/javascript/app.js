@@ -8,7 +8,7 @@ $(document).ready(function () {
 function displayGifs() {
   $("#gifs-go-here").empty();
   var food = $(this).attr("data-name");
-  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     food + "&api_key=qN5lX7Krpj8pqRVhhFxT83JsvWXo2R5B&limit=10";
 
   $.ajax({
