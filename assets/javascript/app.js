@@ -1,5 +1,6 @@
 //api key: qN5lX7Krpj8pqRVhhFxT83JsvWXo2R5B
 var foods = ["taco", "ramen", "nachos", "pizza", "hotdog"];
+var saved = ["these are saved gifs", "more gifs"];
 
 $(document).ready(function () {
   renderButtons();
@@ -19,9 +20,11 @@ function displayGifs() {
       var results = response.data;
       for (var i = 0; i < results.length; i++) {
         var gifDiv = $("<div>");
+        var favButton = $('<button>').text("Save").addClass("save-btn btn");
         var rating = results[i].rating;
         var p = $("<p>").text("Rating: " + rating);
         var foodImage = $("<img>");
+        gifDiv.prepend(favButton);
         gifDiv.prepend(p);
         foodImage.attr("src", results[i].images.fixed_height_still.url);
         foodImage.attr("data-state", "still");
@@ -81,6 +84,18 @@ $(".collapsible").on("click", function () {
   }
 })
 
+function saveGifs(){
+  var gifImg = $(this).siblings(".gif")[0].dataset.animate;
+  var savedImage = $("<img>");
+  savedImage.attr("src", gifImg);
+  savedImage.addClass("column");
+  $('.favorite').prepend(savedImage);
+  }
+
+
+
+
 $(document).on("click", ".food", displayGifs);
 $(document).on("click", ".gif", animateGifs);
+$(document).on("click", ".save-btn", saveGifs);
 renderButtons();
